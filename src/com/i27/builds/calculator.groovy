@@ -1,5 +1,5 @@
 package com.i27.builds;
-class calculator {
+class Calculator {
     def jenkins
     calculator(jenkins) {
         this.jenkins = jenkins

@@ -5,7 +5,7 @@ def call(Map pipelineParams){
         agent {
             label 'slave1'
         }
-        enviornment {
+        environnment {
             APPLICATION_NAME = "${pipelineParams.appName}"
         }
         stages {

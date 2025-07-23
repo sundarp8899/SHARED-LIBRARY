@@ -22,12 +22,13 @@ def call(Map pipelineParams){
             stage('build') {
                 steps {
                     echo "buliding the application"
+                    echo "i am building for ${env.APPLICATION_NAME}"
                 }
             }
             stage('test') {
                 steps {
                     echo "application testing"
-                    echo "i am building for ${APPLICATION_NAME}"
+                    
                 }
             }
             stage('devdeploy') {

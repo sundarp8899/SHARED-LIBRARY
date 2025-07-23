@@ -10,7 +10,7 @@ def call(Map pipelineParams){
             APPLICATION_NAME = "${pipelineParams.appName}"
         }
         stages {
-            stage ('calculate'){
+            stage ('calculator'){
                 steps {
                     script {
                         echo "calling add method for reuse"

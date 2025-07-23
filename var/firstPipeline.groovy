@@ -6,6 +6,9 @@ def call(Map pipelineParams){
         agent {
             label 'slave1'
         }
+        enviornment {
+            APPLICATION_NAME = "${pipelineParams.appName}"
+        }
         stages {
             stage ('calculate'){
                 steps {
@@ -24,6 +27,7 @@ def call(Map pipelineParams){
             stage('test') {
                 steps {
                     echo "application testing"
+                    echo "i am building for ${APPLICATION_NAME}"
                 }
             }
             stage('devdeploy') {

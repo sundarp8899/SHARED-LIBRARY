@@ -1,4 +1,4 @@
-import com.i27.builds.calculator
+import com.i27.builds.Calculator
 def call(Map pipelineParams){
     Calculator calculator = new Calculator(this)
     pipeline {
